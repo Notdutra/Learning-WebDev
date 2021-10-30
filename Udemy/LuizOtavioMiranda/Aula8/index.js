@@ -1,1 +1,5 @@
-console.log('Meu nome eh "Arthur Dutra", Estou aprendendo Javascript as ',8.50, ' da noite');
+console.log(
+  'Meu nome eh "Arthur Dutra", Estou aprendendo Javascript as ',
+  8.5,
+  " da noite"
+);
