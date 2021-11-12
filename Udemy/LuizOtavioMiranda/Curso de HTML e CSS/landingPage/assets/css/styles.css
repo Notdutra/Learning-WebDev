@@ -31,8 +31,6 @@
     text-align: center;
 }
 
-
-
 .grid-main-heading h2 {
     margin-bottom: 1rem;
 }
@@ -97,6 +95,7 @@
 
 .form-group label {
     display: block;
+    margin-bottom: 1rem;
 }
 
 .form-group input, .form-group textarea {
@@ -110,7 +109,7 @@
 }
 
 .form-group input:focus, .form-group textarea:focus {
-    box-shadow: 2px 2px 5px var(--dark-gray-color);
+    box-shadow: 0 0 10px 2px var(--dark-gray-color);
 }
 
 .form-group button {
@@ -118,7 +117,7 @@
     background: none;
     color: var(--white-color);
     padding: 1.5rem 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     transition: all 300ms ease-in;
 }
@@ -130,4 +129,101 @@
 
 .form-group ::placeholder {
     color: #336b874d
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: #444;
+}
+
+.heart {
+    color: red;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .gallery-img img {
+        width: 100%;
+    }
+    .grid-one-content {
+        display: block;
+    }
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-content ul {
+        height: 100vh;
+    }
+    .menu {
+        display: none;
+    }
+    .close-menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+    .menu-spacing {
+        display: none;
+    }
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: var(--white-color);
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        border: 0.1rem solid var(--primary-color);
+    }
 }
