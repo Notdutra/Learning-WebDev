@@ -11,7 +11,11 @@ for (let i in frutas) {
 console.log("\n\n");
 
 const pessoa = {
-  nome: 'Arthur',
-  sobreNome: 'Dutra',
-  idade: 23
+  nome: "Arthur",
+  sobreNome: "Dutra",
+  idade: 23,
 };
+
+for (let i in pessoa) {
+  
+}
