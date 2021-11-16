@@ -4,11 +4,9 @@ const frutas = ["Abacaxi", "Manga", "Morango", "Limao"];
 //     console.log(frutas[i]);
 // }
 
-for (let i in frutas) {
-  console.log(frutas[i]);
-}
-
-console.log("\n\n");
+// for (let i in frutas) {
+//   console.log(frutas[i]);
+// }
 
 const pessoa = {
   nome: "Arthur",
@@ -16,6 +14,14 @@ const pessoa = {
   idade: 23,
 };
 
-for (let i in pessoa) {
-  
+// console.log(pessoa.nome);
+//! sao as mesmas coisas
+// console.log(pessoa['nome']);
+
+// for (let i in pessoa) {
+//   console.log(i);
+// }
+
+for (let chave in pessoa) {
+  console.log(chave, pessoa[chave]);
 }
