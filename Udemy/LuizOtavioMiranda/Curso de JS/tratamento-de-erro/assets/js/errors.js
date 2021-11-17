@@ -18,8 +18,35 @@ try {
   console.log(soma(1, 3));
   console.log(soma(1, "Arthur"));
 } catch (error) {
-  console.log(error);
+  //  console.log(error);
   //! nao mostrar isso para o usuario!!! sempre colocar algo amigavel sem vazar informacao interna
 } finally {
-  console.log("finalmente");
+  console.log("FINALLY: Eu sempre sou executado");
+}
+
+function retornaHora(data) {
+  if (data && !(data instanceof Date)) {
+    throw new TypeError("Esperando instancia de 'Date'.");
+  }
+
+  if (!data) {
+    data = new Date();
+  }
+
+  return data.toLocaleTimeString("pt-BR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  });
+}
+
+try {
+  const dataAtual = new Date();
+  const hora = retornaHora(dataAtual);
+  console.log(hora);
+} catch (error) {
+  // Tratar erro
+} finally {
+  console.log("Tenha um otimo dia!");
 }
