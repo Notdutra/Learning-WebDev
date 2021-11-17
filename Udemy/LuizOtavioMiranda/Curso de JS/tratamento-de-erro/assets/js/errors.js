@@ -1,15 +1,16 @@
-// try {
-//   console.log(naoexisto);
-// } catch (error) {
-//   console.log("Puts deu merda");
-// }
+//* try {
+//! Essa parte é executada quanto nao ha erros
+//* } catch (error) {
+//! Executada quanto ha erros
+//* } finally {
+//! Sempre roda
+//*}
 
 function soma(x, y) {
   if (typeof x !== "number" || typeof y !== "number") {
     //! throw "x e y precisam ser numeros!";  para enviar so esta mensagem
     throw new Error("x e y precisam ser numeros!");
   }
-
   return x + y;
 }
 
@@ -19,4 +20,6 @@ try {
 } catch (error) {
   console.log(error);
   //! nao mostrar isso para o usuario!!! sempre colocar algo amigavel sem vazar informacao interna
+} finally {
+  console.log("finalmente");
 }
