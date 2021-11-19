@@ -39,10 +39,10 @@ function f1Callback() {
     f2(f2Callback);
 }
 
-function f2() {
+function f2Callback() {
     f3(f3Callback);
 }
 
-function f3() {
+function f3Callback() {
     console.log('Ola mundou');
 }
