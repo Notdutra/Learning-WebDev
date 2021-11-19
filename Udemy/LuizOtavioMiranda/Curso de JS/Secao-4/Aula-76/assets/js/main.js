@@ -4,6 +4,33 @@ function criaCalculadora() {
 
     inicia() {
       this.cliqueBotoes();
+      this.pressionaEnter();
+      this.pressionaEsc();
+      this.pressionaApagar();
+    },
+
+    pressionaEnter() {
+      this.display.addEventListener('keyup', e => {
+        if (e.keyCode === 13) {
+          this.realizaConta();
+        }
+      })
+    },
+
+    pressionaEsc() {
+      this.display.addEventListener('keyup', e => {
+        if (e.keyCode === 27) {
+          this.clearDisplay();
+        }
+      })
+    },
+
+    pressionaApagar() {
+      this.display.addEventListener('keyup', e => {
+        if (e.keyCode === 8) {
+          this.apagaUm();
+        }
+      })
     },
 
     realizaConta() {
@@ -29,7 +56,6 @@ function criaCalculadora() {
     apagaUm() {
       this.display.value = this.display.value.slice(0, -1);
     },
-
 
 
     cliqueBotoes() {
