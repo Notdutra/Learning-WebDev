@@ -1,5 +1,7 @@
 //* Reduce
-//* nao mexe no array original,
+//* nao mexe no array original, Retorna apenas um valor
+//* o Acumulador é na real o previousValue,
+//* (acumulador, valor, indice, vetor)
 
 const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 const somarOsnumeros = numeros.reduce(function (acumulador, valor) {
@@ -27,6 +29,7 @@ console.log(`Valores em dobro: ${valoresEmDobro} \n`);
 //! --------------------------------------------------------
 
 //* Retorne a pessoa mais velha
+
 const pessoas = [
   { nome: 'Arthur', idade: 23 },
   { nome: 'Pedepano', idade: 3 },
