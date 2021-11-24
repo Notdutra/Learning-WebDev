@@ -14,7 +14,7 @@ console.log('------------------------------------');
 //* Retorne as pessoas com mais de 50 anos
 //* Retorne as pessoas que o nome termina com a letra a
 
-const pessoas = [
+`const pessoas = [
   { nome: 'Arthur', idade: 23 },
   { nome: 'Pedepano', idade: 3 },
   { nome: 'Bruna', idade: 23 },
@@ -24,7 +24,7 @@ const pessoas = [
   { nome: 'Leticia', idade: 19 },
   { nome: 'Rosana', idade: 32 },
   { nome: 'Wallace', idade: 47 },
-];
+];`
 
 console.log('\nPessoas que o nome tem 5 letras ou mais:');
 const pessoasComNomeGrande = pessoas.filter((p) => p.nome.length >= 5);
