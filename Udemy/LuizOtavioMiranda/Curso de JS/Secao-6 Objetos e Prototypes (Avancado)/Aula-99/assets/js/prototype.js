@@ -1,2 +1,0 @@
-//* Polimorfismo
-//* Classes = funcao construtora
