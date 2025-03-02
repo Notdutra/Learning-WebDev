@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # Use "npm" for Node.js projects
+    directory: "/" # The root directory (adjust if using subdirectories)
+    schedule:
+      interval: "weekly" # You can choose "daily", "weekly", or "monthly"

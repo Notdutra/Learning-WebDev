@@ -1,0 +1,24 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.top {
+    margin: auto;
+    width: fit-content;
+    border: 5px solid rgb(221, 163, 87);
+    padding: 10px;
+}
+
+.rightPane {
+    background-image: url('../images/pdp1.jpg');
+    background-repeat: no-repeat;
+    width: 494px;
+    height: 690px;
+    float: right;
+    transition: 0.5s filter linear;
+}
+
+.rightPane:hover {
+    filter: grayscale(100%);
+}
